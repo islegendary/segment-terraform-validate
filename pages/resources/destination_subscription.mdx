@@ -21,7 +21,10 @@ terraform import segment_destination_subscription.example <destination_id>:<subs
 
 ## Example Usage
 
-<CodeSnippet initialCode={`resource "segment_destination_subscription" "send_to_webhook" {
+
+<CodeSnippet initialCode={`# Configures a specific destination subscription
+resource "segment_destination_subscription" "send_to_webhook" {
+
   destination_id = segment_destination.webhook.id
   name           = "Webhook send subscription"
   enabled        = true
@@ -52,7 +55,7 @@ terraform import segment_destination_subscription.example <destination_id>:<subs
 ### Optional
 
 - `model_id` (String) The unique identifier for the linked ReverseETLModel, if this part of a Reverse ETL connection.
-- `reverse_etl_schedule` (Attributes) (Reverse ETL only) The schedule for the subscription being attached to ReverseETL model. (see below for nested schema)
+- `reverse_etl_schedule` (Attributes) (Reverse ETL only) The schedule for the subscription being attached to ReverseETL model. (see [below for nested schema](#nestedatt--reverse_etl_schedule))
 
 ### Read-Only
 
