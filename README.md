@@ -65,7 +65,25 @@ Each example block within a documentation page must support the following user a
 
 This is intended for internal engineers, solution architects, or documentation maintainers who:
 - Want to test Terraform examples before using them
-- Need a faster, interactive alternative to copying from the static registry
+- Need a faster, interactive alternative to copying from the static registry8. Clean Up Local Terraform Artifacts
+
+To remove everything generated locally (including state and lock files):
+
+For Bash / macOS / Linux:
+
+bash
+
+CopyEdit
+
+rm -rf .terraform terraform.tfstate terraform.tfstate.backup .terraform.lock.hcl 
+
+For PowerShell:
+
+powershell
+
+CopyEdit
+
+Remove-Item -Recurse -Force .terraform, terraform.tfstate, terraform.tfstate.backup, .terraform.lock.hcl 
 - Prefer in-browser validation and optional AI-driven fixes
 
 ---
