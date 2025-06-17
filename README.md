@@ -87,10 +87,13 @@ This is intended for internal engineers, solution architects, or documentation m
    npm run dev
    ```
 3. Open <http://localhost:3000> in your browser.
+<<<<<<< e82aiz-codex/review-readme-and-implement-solution
 4. To check code style with ESLint:
    ```bash
    npm run lint
    ```
+=======
+>>>>>>> main
 
 To enable the optional **Fix** button you must set an OpenAI API key:
 ```bash
