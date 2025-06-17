@@ -75,3 +75,20 @@ This is intended for internal engineers, solution architects, or documentation m
 - This project runs locally and does not interact with live infrastructure.
 - The Codex integration (Fix button) is optional and should only be enabled if an OpenAI key is configured securely.
 
+
+## Getting Started
+
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Start the development server:
+   ```bash
+   npm run dev
+   ```
+3. Open <http://localhost:3000> in your browser.
+
+To enable the optional **Fix** button you must set an OpenAI API key:
+```bash
+export NEXT_PUBLIC_OPENAI_KEY="sk-..."
+```
